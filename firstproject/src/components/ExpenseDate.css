@@ -1,0 +1,14 @@
+.date_ele{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    height: 5em;
+    width: 10em;
+
+}
