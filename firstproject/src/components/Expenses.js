@@ -1,5 +1,8 @@
+import React from "react";
+
 import './Expenses.css'
 import ExpenseItem from './ExpenseItem'
+import Card from './Card';
 
 function Expenses(props){
     return(
@@ -24,7 +27,7 @@ function Expenses(props){
             title={props.item[3].title}
             Amount={props.item[3].amount}/>
             </div>
-    )
+    );
 }
 
 export default Expenses;
