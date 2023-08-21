@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css'
 import Expenses from './components/Expenses';
+import NewExpense from "./components/NewExpense/NewExpense";
 
 function App(){
     // let expenseDate=new Date(2023,3,28);
@@ -37,7 +38,8 @@ function App(){
 
     return (
             <div>
-            <h1 className="heading">Information Generator</h1>
+            <h1 className="heading">Expense Tracker</h1>
+            <NewExpense/>
             <Expenses item={expense}/>
             </div>
        
