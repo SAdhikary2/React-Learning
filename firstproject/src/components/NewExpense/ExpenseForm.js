@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
 
-function ExpenseForm() {
+function ExpenseForm(props) {
 
 const [enterTitle,setEntertitle]=useState('')
 const [enterAmount,setEnterAmount]=useState('')
@@ -30,6 +30,8 @@ const submitHandler=(event)=>{
     }
 
     console.log(expenseData);
+
+  props.onSavedata(expenseData);
 
     //This is call two way binding
     setEntertitle('');
